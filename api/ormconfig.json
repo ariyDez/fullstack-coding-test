@@ -1,0 +1,19 @@
+[
+  {
+    "name": "default",
+    "type": "postgres",
+    "host": "localhost",
+    "port": 13650,
+    "username": "postgres",
+    "password": "tr134sdfWE",
+    "database": "sass-db",
+    "entities": ["dist/modules/**/*.entity{ .ts,.js}"],
+    "synchronize": true,
+    "migrations": ["dist/migrations/*{.ts,.js}"],
+    "migrationsTableName": "migrations_history",
+    "migrationsRun": true,
+    "cli": {
+        "migrationsDir": "src/migrations"
+    }
+  }
+]
